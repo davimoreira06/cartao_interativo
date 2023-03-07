@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-left {
+    height: 100vh;
+    background-image: url('./assets/bg-left.png');
+    background-size: cover;
+    width: 30vw;
+}
