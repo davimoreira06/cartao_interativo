@@ -10,15 +10,60 @@
 <body>
     <main>
         <div class="bg-left">
-            <section>
-                <img src="./assets/card-front.png">
-                <img src="./assets/card-back.png">
+            <div class="display">
+                <section class="section-left">
+                    <img class="card-front" src="./assets/card-front.png">
+                    <img class="card-logo" src="./assets/card-logo.png">
+                    <img class="card-back" src="./assets/card-back.png">
 
-            </section>
-            <section>
+                </section>
+                <section class="section-right">
+                    <div class="div-card-name">
+                        <label for="card-name">CARDHOLDER NAME</label><br>
+                        <input type="text" id="card-name" name="card-name" placeholder="e.g. Jane Appleseed"><br>
+                    </div>
 
+                    <div class="div-card-number">
+                        <label for="card-number">CARD NUMBER</label><br>
+                        <input type="number" id="card-number" name="card-number" placeholder="e.g. 1234 5678 9123 0000"><br>
+                    </div>
 
-            </section>
+                    <div class="div-exp-date">
+                        <label for="exp-date">EXP. DATE (MM/YY)</label><br>
+                        <select id="exp-date" name="exp-date">
+                            <option value="MM" disabled selected>MM</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select id="exp-date" name="exp-date">
+                            <option value="YY" disabled selected>YY</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                        </select>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 </body>

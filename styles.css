@@ -1,11 +1,44 @@
+@font-face {
+    font-family: 'Grandis';
+    src: url(./fonts/grandis-condensed-regular.otf) format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Grandis', Times, serif;
 }
 
 .bg-left {
     height: 100vh;
     background-image: url('./assets/bg-left.png');
     background-size: cover;
-    width: 30vw;
+    width: 35vw;
+}
+
+.card-front {
+    margin-top: 21vh;
+    margin-left: 18vw;
+}
+
+.card-back {
+    margin-top: 4vh;
+    margin-left: 24vw;
+}
+
+.card-logo {
+    left: 20vw;
+    position: absolute;
+    width: 73px;
+    bottom: 72vh;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.section-right {
+    margin-top: 38vh;
+    margin-left: 15vw;
 }
