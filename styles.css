@@ -42,3 +42,54 @@
     margin-top: 38vh;
     margin-left: 15vw;
 }
+
+.date-cvc {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none
+}
+
+.input-name-number {
+    margin-top: 5px;
+    width: 20vw;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(227, 225, 225);
+}
+
+input::placeholder {
+    color: rgb(167, 165, 165);
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+select {
+    border-radius: 5px;
+    border: 1px solid rgb(227, 225, 225);
+    color: rgb(167, 165, 165);
+    height: 35px;
+    width: 58px;
+}
+
+.label-date {
+    display: inline-block;
+    width: 121px;
+}
+
+.input-cvc {
+    border-radius: 5px;
+    border: 1px solid rgb(227, 225, 225);
+    color: rgb(167, 165, 165);
+    height: 35px;
+    width: 130px;
+}
+
+.cvc {
+    padding-left: 29px;
+}
