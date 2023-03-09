@@ -39,7 +39,7 @@
 }
 
 .section-right {
-    margin-top: 38vh;
+    margin-top: 35vh;
     margin-left: 15vw;
 }
 
@@ -58,10 +58,12 @@ input[type=number]::-webkit-inner-spin-button {
     height: 35px;
     border-radius: 5px;
     border: 1px solid rgb(227, 225, 225);
+    
 }
 
 input::placeholder {
     color: rgb(167, 165, 165);
+    font-size: 16px;
 }
 
 input:focus {
@@ -74,22 +76,69 @@ select {
     border: 1px solid rgb(227, 225, 225);
     color: rgb(167, 165, 165);
     height: 35px;
-    width: 58px;
+    width: 3.5vw;
+    margin-top: 5px;
 }
+
+select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
 
 .label-date {
     display: inline-block;
     width: 121px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
 .input-cvc {
     border-radius: 5px;
     border: 1px solid rgb(227, 225, 225);
-    color: rgb(167, 165, 165);
     height: 35px;
-    width: 130px;
+    width: 10vw;
+    margin-top: 5px;
 }
 
 .cvc {
     padding-left: 29px;
+}
+
+.label-card {
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.div-card-name {
+    margin-bottom: 25px;
+}
+
+.div-card-number {
+    margin-bottom: 25px;
+}
+
+.div-exp-date {
+    margin-bottom: 35px;
+
+}
+
+.div-cvc {
+    margin-bottom: 35px;
+}
+
+.btn-confirm {
+    background-color: #230c33;
+    color: white;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-left: 1px;
+    box-shadow: #4e4e4e 0.5px 0.5px 4px
 }
