@@ -71,11 +71,44 @@ input:focus {
     outline: 0;
 }
 
+.user-number {
+    border: none;
+    background: transparent;
+    width: 24vw;
+    position: relative;
+    left: 21.5vw;
+    bottom: 12vh;
+    height: 31px;
+}
+
+.user-number::placeholder {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+.user-name {
+    border: none;
+    background: transparent;
+    width: 25vw;
+    position: relative;
+    bottom: 6vh;
+    right: 40px;
+}
+
+.user-name::placeholder {
+    color: white;
+    font-size: 16px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
 select {
     border-radius: 5px;
     border: 1px solid rgb(227, 225, 225);
     color: rgb(167, 165, 165);
-    height: 35px;
+    height: 36px;
     width: 3.5vw;
     margin-top: 5px;
 }
@@ -84,8 +117,6 @@ select:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
-
-
 
 .label-date {
     display: inline-block;
@@ -114,20 +145,20 @@ select:focus {
 }
 
 .div-card-name {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .div-card-number {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .div-exp-date {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 
 }
 
 .div-cvc {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .btn-confirm {
