@@ -42,7 +42,7 @@
 
 .section-right {
     margin-top: 35vh;
-    margin-left: 15vw;
+    margin-left: 12vw;
 }
 
 .date-cvc {
@@ -60,7 +60,6 @@ input[type=number]::-webkit-inner-spin-button {
     height: 35px;
     border-radius: 5px;
     border: 1px solid rgb(227, 225, 225);
-    
 }
 
 input::placeholder {
@@ -69,7 +68,7 @@ input::placeholder {
 }
 
 input:focus {
-    box-shadow: 0 0 0 0;
+    border: 1px solid #4d097e;
     outline: 0;
 }
 
@@ -123,6 +122,13 @@ input:focus {
     bottom: 54.1vh;
 }
 
+.user-cvc {
+    color: white;
+    position: absolute;
+    left: 45vw;
+    bottom: 28vh;
+}
+
 select {
     border-radius: 5px;
     border: 1px solid rgb(227, 225, 225);
@@ -133,9 +139,10 @@ select {
 }
 
 select:focus {
-    box-shadow: 0 0 0 0;
+    border: 1px solid #4d097e;
     outline: 0;
 }
+
 
 .label-date {
     display: inline-block;
