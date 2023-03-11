@@ -16,9 +16,11 @@
     width: 35vw;
 }
 
+
 .card-front {
     margin-top: 21vh;
     margin-left: 18vw;
+    position: relative;
 }
 
 .card-back {
@@ -74,16 +76,13 @@ input:focus {
 .user-number {
     border: none;
     background: transparent;
-    width: 24vw;
+    width: 55vw;
     position: relative;
     left: 21vw;
-    bottom: 12vh;
+    bottom: 13vh;
     height: 31px;
-}
-
-.user-number::placeholder {
-    color: white;
     font-size: 30px;
+    color: white;
     letter-spacing: 3px;
     word-spacing: 8px;
 }
@@ -92,45 +91,36 @@ input:focus {
     border: none;
     background: transparent;
     width: 20vw;
-    position: relative;
-    bottom: 6vh;
-    right: 55px;
-}
-
-.user-name::placeholder {
-    color: white;
+    position: absolute;
+    bottom: 54vh;
+    left: 21vw;
     font-size: 16px;
-    word-spacing: 2px;
-    letter-spacing: 2px;
+    color: white;
 }
 
 .user-exp-date-m {
     border: none;
     background: transparent;
-    position: relative;
-    left: 41vw;
-    bottom: 79px;
+    position: absolute;
+    bottom: 54vh;
+    left: 38.4vw;
+    color: white;
 }
 
 .user-exp-date-y {
     border: none;
     background: transparent;
-    position: relative;
-    left: 42.7vw;
-    bottom: 120px;
+    position: absolute;
+    bottom: 54vh;
+    left: 40vw;
+    color: white;
 }
 
-p {
-    font-size: 16px;
-    color: white;
-    position: relative;
-    left: 42.2vw;
-    bottom: 100px;
-}
-
-.user-exp-date-m::placeholder, .user-exp-date-y::placeholder {
-    color: white;
-    font-size: 16px;
+.barra {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 39.5vw;
+    bottom: 54.1vh;
 }
 
 select {
