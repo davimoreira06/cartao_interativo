@@ -76,7 +76,7 @@ input:focus {
     background: transparent;
     width: 24vw;
     position: relative;
-    left: 21.5vw;
+    left: 21vw;
     bottom: 12vh;
     height: 31px;
 }
@@ -91,10 +91,10 @@ input:focus {
 .user-name {
     border: none;
     background: transparent;
-    width: 25vw;
+    width: 20vw;
     position: relative;
     bottom: 6vh;
-    right: 40px;
+    right: 55px;
 }
 
 .user-name::placeholder {
@@ -102,6 +102,35 @@ input:focus {
     font-size: 16px;
     word-spacing: 2px;
     letter-spacing: 2px;
+}
+
+.user-exp-date-m {
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 41vw;
+    bottom: 79px;
+}
+
+.user-exp-date-y {
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 42.7vw;
+    bottom: 120px;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    left: 42.2vw;
+    bottom: 100px;
+}
+
+.user-exp-date-m::placeholder, .user-exp-date-y::placeholder {
+    color: white;
+    font-size: 16px;
 }
 
 select {
