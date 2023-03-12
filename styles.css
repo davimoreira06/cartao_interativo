@@ -19,23 +19,23 @@
 
 
 .card-front {
-    margin-top: 14vh;
+    margin-top: 15.5vh;
     margin-left: 18vw;
     position: relative;
     width: 85%;
 }
 
 .card-back {
-    margin-top: -20vh;
+    margin-top: -7vh;
     margin-left: 24vw;
     width: 85%;
 }
 
 .card-logo {
-    position: relative;
-    width: 16%;
+    position: absolute;
+    width: 5%;
     left: 20vw;
-    bottom: 46vh;
+    bottom: 76vh;
 }
 
 .display {
@@ -44,8 +44,9 @@
 }
 
 .section-right {
-    margin-top: 27vh;
-    margin-left: 32vw;
+    margin-top: 30vh;
+    margin-left: 28vw;
+    zoom: 110%;
 }
 
 .date-cvc {
@@ -75,35 +76,16 @@ input:focus {
     outline: 0;
 }
 
-/*
-.user-number {
+#user-number {
     border: none;
     background: transparent;
     width: 55vw;
     position: relative;
-    left: 20.5vw;
+    left: 21.3vw;
     bottom: 14vh;
     height: 31px;
     font-size: 2.2vw;
     color: white;
-    letter-spacing: 3px;
-    word-spacing: 8px;
-}
-*/
-
-.user-number {
-    width: 55vw;
-    background: transparent;
-    border: none;
-    position: relative;
-    height: 33px;
-    left: 20.5vw;
-    bottom: 14vh;
-}
-
-.user-number::placeholder {
-    color: white;
-    font-size: 2.2vw;
     letter-spacing: 3px;
     word-spacing: 8px;
 }
@@ -113,42 +95,51 @@ input:focus {
     background: transparent;
     width: 20vw;
     position: relative;
-    bottom: 10.5vh;
+    bottom: 15vh;
     left: 21vw;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 
-.user-exp-date-m {
+#user-exp-date-m {
     border: none;
     background: transparent;
     position: relative;
-    bottom: 13.5vh;
-    left: 41.2vw;
+    bottom: 17.4vh;
+    left: 41.3vw;
     color: white;
+    font-size: 18px;
 }
 
-.user-exp-date-y {
+#user-exp-date-y {
     border: none;
     background: transparent;
     position: relative;
-    bottom: 19.5vh;
+    bottom: 22.2vh;
     left: 43vw;
     color: white;
+    font-size: 18px;
 }
 
 .barra {
     color: rgb(255, 255, 255);
     position: relative;
     left: 42.5vw;
-    bottom: 16.6vh;
+    bottom: 19.8vh;
+    font-size: 18px;
 }
 
-.user-cvc {
+.card-down {
+    position: relative;
+    top: 7vh;
+}
+
+#user-cvc {
     color: white;
     position: relative;
-    left: 48vw;
-    bottom: 21.6%;
+    left: 48.5vw;
+    bottom: 20.6%;
+    font-size: 18px;
 }
 
 select {
@@ -218,5 +209,10 @@ select:focus {
     font-size: 16px;
     letter-spacing: 0.5px;
     margin-left: 1.5px;
-    box-shadow: #4e4e4e 0.5px 0.5px 4px
+    box-shadow: #4e4e4e 0.5px 0.5px 4px;
+    cursor: pointer;
+}
+
+.section-hidden {
+    display: none;
 }

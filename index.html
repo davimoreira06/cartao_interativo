@@ -13,30 +13,35 @@
             <div class="display">
                 <section class="section-left">
                     <img class="card-front" src="./assets/card-front.png">
-                    <input type="number" id="user-number" name="user-number" class="user-number" placeholder="0000 0000 0000 0000">
-                    <p id="user-name">JANE APPLESEED</p>
-                    <p class="user-exp-date-m">00</p>
-                    <p class="barra">/</p>
-                    <p class="user-exp-date-y">00</p>
+                    <p id="user-number">0000 0000 0000 0000</p>
+                    <div class="card-down">
+                        <p id="user-name">JANE APPLESEED</p>
+                        <p id="user-exp-date-m">00</p>
+                        <p class="barra">/</p>
+                        <p id="user-exp-date-y">00</p>
+                    </div>
                     <img class="card-logo" src="./assets/card-logo.png">
                     <img class="card-back" src="./assets/card-back.png">
-                    <p class="user-cvc">000</p>
+                    <p id="user-cvc">000</p>
                 <form>
                     </section>
                     <section class="section-right">
                         <div class="div-card-name">
                             <label class="label-card" for="card-name">CARDHOLDER NAME</label><br>
-                            <input class="input-name-number" type="text" id="card-name" name="card-name" placeholder="e.g. Jane Appleseed" required onkeyup="receiveUserName"><br>
+                            <input class="input-name-number" type="text" id="card-name" placeholder="e.g. Jane Appleseed" required
+                            oninput="receiveName()"><br>
                         </div>
 
                         <div class="div-card-number">
                             <label class="label-card" for="card-number">CARD NUMBER</label><br>
-                            <input class="input-name-number" type="number" id="card-number" name="card-number" placeholder="e.g. 1234 5678 9123 0000" required onkeyup="receiveUserNumber"><br>
+                            <input class="input-name-number" type="number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" required 
+                            onkeyup="receiveNumber()" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
+                            maxlength="16" minlength="16"><br>
                         </div>
                         <div class="date-cvc">
                             <div class="div-exp-date">
                                 <label class="label-date" for="exp-date">EXP. DATE (MM/YY)</label><br>
-                                <select id="exp-date" name="exp-date" required onkeyup="updateSelect"> 
+                                <select id="exp-date-m" name="exp-date-m" required onkeyup="updateSelect" oninput="receiveMonth()"> 
                                     <option value="MM" disabled selected>MM</option>
                                     <option value="01">01</option>
                                     <option value="02">02</option>
@@ -51,7 +56,7 @@
                                     <option value="11">11</option>
                                     <option value="12">12</option>
                                 </select>
-                                <select id="exp-date" name="exp-date" required>
+                                <select id="exp-date-y" name="exp-date-y" required oninput="receiveYear()">
                                     <option value="YY" disabled selected>YY</option>
                                     <option value="23">23</option>
                                     <option value="24">24</option>
@@ -70,10 +75,18 @@
                             </div>
                             <div class="cvc">
                                 <label class="label-card" for="cvc">CVC</label><br>
-                                <input class="input-cvc" type="number" id="cvc" name="cvc" placeholder="e.g. 123" required>
+                                <input class="input-cvc" type="number" id="cvc" placeholder="e.g. 123" required onkeyup="receiveCvc()"
+                                oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
+                                maxlength="3" minlength="3">
                             </div>
                         </div>
-                        <input class="btn-confirm" type="submit" value="Confirm">
+                        <input onclick="thankYou()" class="btn-confirm" type="submit" value="Confirm">
+                        <div class="section-hidden">
+                            <img class="complete-img" src="./assets/icon-complete.png">
+                            <h2 class="h-complete">THANK YOU!</h2>
+                            <p class="p-complete">We've added your card details</p>
+                            <button onclick="continueBtn()" class="btn-continue">Continue</button>
+                        </div>
                     </section>
                 </form>
             </div>
