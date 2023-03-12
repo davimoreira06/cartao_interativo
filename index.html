@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js" defer></script>
     <title>Interactive Card</title>
 </head>
 <body>
@@ -14,8 +13,8 @@
             <div class="display">
                 <section class="section-left">
                     <img class="card-front" src="./assets/card-front.png">
-                    <p class="user-number">0000 0000 0000 0000</p>
-                    <p class="user-name">JANE APPLESEED</p>
+                    <input type="number" id="user-number" name="user-number" class="user-number" placeholder="0000 0000 0000 0000">
+                    <p id="user-name">JANE APPLESEED</p>
                     <p class="user-exp-date-m">00</p>
                     <p class="barra">/</p>
                     <p class="user-exp-date-y">00</p>
@@ -27,17 +26,17 @@
                     <section class="section-right">
                         <div class="div-card-name">
                             <label class="label-card" for="card-name">CARDHOLDER NAME</label><br>
-                            <input class="input-name-number" type="text" id="card-name" name="card-name" placeholder="e.g. Jane Appleseed" required><br>
+                            <input class="input-name-number" type="text" id="card-name" name="card-name" placeholder="e.g. Jane Appleseed" required onkeyup="receiveUserName"><br>
                         </div>
 
                         <div class="div-card-number">
                             <label class="label-card" for="card-number">CARD NUMBER</label><br>
-                            <input class="input-name-number" type="number" id="card-number" name="card-number" placeholder="e.g. 1234 5678 9123 0000" required><br>
+                            <input class="input-name-number" type="number" id="card-number" name="card-number" placeholder="e.g. 1234 5678 9123 0000" required onkeyup="receiveUserNumber"><br>
                         </div>
                         <div class="date-cvc">
                             <div class="div-exp-date">
                                 <label class="label-date" for="exp-date">EXP. DATE (MM/YY)</label><br>
-                                <select id="exp-date" name="exp-date" required>
+                                <select id="exp-date" name="exp-date" required onkeyup="updateSelect"> 
                                     <option value="MM" disabled selected>MM</option>
                                     <option value="01">01</option>
                                     <option value="02">02</option>
@@ -80,5 +79,6 @@
             </div>
         </div>
     </main>
+    <script src="./scripts.js"></script>
 </body>
 </html>

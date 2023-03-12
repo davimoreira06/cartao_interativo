@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Grandis', Times, serif;
+    width: 100%;
 }
 
 .bg-left {
@@ -18,21 +19,23 @@
 
 
 .card-front {
-    margin-top: 21vh;
+    margin-top: 14vh;
     margin-left: 18vw;
     position: relative;
+    width: 85%;
 }
 
 .card-back {
-    margin-top: 4vh;
+    margin-top: -20vh;
     margin-left: 24vw;
+    width: 85%;
 }
 
 .card-logo {
+    position: relative;
+    width: 16%;
     left: 20vw;
-    position: absolute;
-    width: 73px;
-    bottom: 72vh;
+    bottom: 46vh;
 }
 
 .display {
@@ -41,8 +44,8 @@
 }
 
 .section-right {
-    margin-top: 35vh;
-    margin-left: 12vw;
+    margin-top: 27vh;
+    margin-left: 32vw;
 }
 
 .date-cvc {
@@ -72,26 +75,45 @@ input:focus {
     outline: 0;
 }
 
+/*
 .user-number {
     border: none;
     background: transparent;
     width: 55vw;
     position: relative;
-    left: 21vw;
-    bottom: 13vh;
+    left: 20.5vw;
+    bottom: 14vh;
     height: 31px;
-    font-size: 30px;
+    font-size: 2.2vw;
     color: white;
     letter-spacing: 3px;
     word-spacing: 8px;
 }
+*/
 
-.user-name {
+.user-number {
+    width: 55vw;
+    background: transparent;
+    border: none;
+    position: relative;
+    height: 33px;
+    left: 20.5vw;
+    bottom: 14vh;
+}
+
+.user-number::placeholder {
+    color: white;
+    font-size: 2.2vw;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+#user-name {
     border: none;
     background: transparent;
     width: 20vw;
-    position: absolute;
-    bottom: 54vh;
+    position: relative;
+    bottom: 10.5vh;
     left: 21vw;
     font-size: 16px;
     color: white;
@@ -100,33 +122,33 @@ input:focus {
 .user-exp-date-m {
     border: none;
     background: transparent;
-    position: absolute;
-    bottom: 54vh;
-    left: 38.4vw;
+    position: relative;
+    bottom: 13.5vh;
+    left: 41.2vw;
     color: white;
 }
 
 .user-exp-date-y {
     border: none;
     background: transparent;
-    position: absolute;
-    bottom: 54vh;
-    left: 40vw;
+    position: relative;
+    bottom: 19.5vh;
+    left: 43vw;
     color: white;
 }
 
 .barra {
     color: rgb(255, 255, 255);
-    position: absolute;
-    left: 39.5vw;
-    bottom: 54.1vh;
+    position: relative;
+    left: 42.5vw;
+    bottom: 16.6vh;
 }
 
 .user-cvc {
     color: white;
-    position: absolute;
-    left: 45vw;
-    bottom: 28vh;
+    position: relative;
+    left: 48vw;
+    bottom: 21.6%;
 }
 
 select {
@@ -155,7 +177,7 @@ select:focus {
     border-radius: 5px;
     border: 1px solid rgb(227, 225, 225);
     height: 35px;
-    width: 10vw;
+    width: 9vw;
     margin-top: 5px;
 }
 
@@ -195,6 +217,6 @@ select:focus {
     border: none;
     font-size: 16px;
     letter-spacing: 0.5px;
-    margin-left: 1px;
+    margin-left: 1.5px;
     box-shadow: #4e4e4e 0.5px 0.5px 4px
 }
