@@ -211,8 +211,55 @@ select:focus {
     margin-left: 1.5px;
     box-shadow: #4e4e4e 0.5px 0.5px 4px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.section-hidden {
-    display: none;
+.btn-confirm:hover {
+    background-color: #3b1159;
+}
+
+.complete-btn {
+    opacity: 0; 
+    transition: 500ms;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1600px) {
+   .card-back {
+        position: relative;
+        bottom: 8vh;
+   }
+   
+    #user-name {
+        position: relative;
+        bottom: 17vh;
+    }
+    
+    #user-number {
+        position: relative;
+        left: 21vw;
+    }
+
+    #user-exp-date-m {
+        position: relative;
+        bottom: 20.1vh;
+    }
+
+    #user-exp-date-y {
+        position: relative;
+        left: 43.4vw;
+        bottom: 26.3vh;
+    }
+
+    .barra {
+        position: relative;
+        bottom: 23.3vh;
+        left: 42.8vw;
+    }
+
+    #user-cvc {
+        position: relative;
+        bottom: 27.4vh;
+    }
+
 }

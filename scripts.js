@@ -36,3 +36,15 @@ function receiveYear() {
 function receiveCvc() {
     pCvc.innerHTML = inpCvc.value;
 }
+
+/*
+const completeBtn = document.querySelector(".complete-btn")
+const submitBtn = document.querySelector("submit-btn")
+
+submitBtn.addEventListener("click", () => {
+    submitBtn.style.display = "none";
+    completeBtn.style.width = "100%";
+    completeBtn.style.width.display = "block";
+
+})
+*/
