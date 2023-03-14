@@ -27,3 +27,4 @@ Cartão interativo que aparece as informações do cartão do usuário simultane
  
  Davi Mendonça Moreira
 
+https://www.linkedin.com/in/davi-moreira-a71587261/
