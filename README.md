@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-<a target="_blank" href="https://davimoreira06.github.io/cartao_interativo/">https://davimoreira06.github.io/cartao_interativo/</a>
+https://davimoreira06.github.io/cartao_interativo/
 
 Cartão interativo que aparece as informações do cartão do usuário simultaneamente na tela.
 
