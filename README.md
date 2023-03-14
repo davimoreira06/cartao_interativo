@@ -1,5 +1,4 @@
 # Cartão interativo
-<hr>
 
 ## Sobre o projeto
 
