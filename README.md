@@ -6,13 +6,13 @@ https://davimoreira06.github.io/cartao_interativo/
 
 Cartão interativo que aparece as informações do cartão do usuário simultaneamente na tela.
 
-<hr>
+#
 
 ## Layout web
 
 <img src="./assets/gif-cartao-interativo.gif">
 
-<hr>
+#
 
 ## Tecnologias utilizadas
 ### Front-End
@@ -21,7 +21,7 @@ Cartão interativo que aparece as informações do cartão do usuário simultane
 - CSS
 - JavaScript
 
-<hr>
+#
 
 ## Autor
  
